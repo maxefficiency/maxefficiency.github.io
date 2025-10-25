@@ -1,0 +1,210 @@
+/*p {
+    font-size: 30px;
+    color: brown;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: underline;
+    font-style: normal;
+    font-family: monospace;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: coral;
+    margin: 30px;
+    padding: 50px;
+}
+    */
+.text1 {
+    background-color: rgba(99, 210, 30, 0.615);
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+span{
+    font-style: italic;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------
+новые стили для индекс5*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(56, 56, 56);
+    background-image: url("static/bg.jpg");
+    background-blend-mode: screen;
+    background-position: center;
+}
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(102, 194, 247, 0.952);
+
+}
+
+img{
+    width: 60px;
+    margin: 11px;
+}
+
+button{
+    display: none;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-link:hover{
+    color: rgb(219, 133, 34);
+}
+
+.header-link:focus{
+    color: blueviolet;
+}
+
+
+a{ 
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    display: flex;
+    margin-top: 35px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.foto{
+    width: 400px;
+    margin: 0px;
+    border-radius: 7px;
+}
+
+.textnear{
+    margin-left: 15px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.galleryname{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.album{
+    margin-top: 15px;
+}
+
+.eachfoto{
+    border-radius: 7px;
+    margin-left: 15px;
+    width: 270px;
+    margin: 12px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(27, 27, 32, 0.836);
+    padding: 20px;
+    margin-top: 30px;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-img{
+    width: 18px;
+    margin: 0;
+}
+
+.social-links a{
+    font-weight: 400;
+} /* работает наследование тегов по дереву разметки: от social-links --> a */
+
+
+/* работа над адаптивностью */
+
+@media(max-width: 890px){
+    .eachfoto{
+        width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .textnear{
+        text-align: center;
+    }
+}
+
+@media (max-width: 546px) {
+    .foto{
+        width: 300px;
+    }
+
+    button{
+        font-size: 24px;
+        width: 40px;
+        border: none;
+        background-color: rgba(102, 194, 247, 0.062);
+        display: block;
+    }
+
+    .header-button ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        background-color: rgba(102, 194, 247, 0.76);
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: rgba(46, 46, 46, 0.247);
+        padding: 10px;
+    }
+
+    .header-button:hover ul{
+        display: flex;
+    }
+
+    ul li{
+        padding: 10px;
+    }
+}
+
