@@ -14,12 +14,12 @@
 }
     */
 .text1 {
-    background-color: rgba(99, 210, 30, 0.615);
-    border: 2px solid;
+    background: linear-gradient(45deg, rgba(176, 224, 230, 0.704), rgba(232, 166, 108, 0.367));
+    border: 1px solid;
     border-radius: 5px;
     border-color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -104,6 +104,7 @@ a{
 
 h1{
     font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .gallery{
@@ -153,6 +154,345 @@ h1{
 .social-links a{
     font-weight: 400;
 } /* работает наследование тегов по дереву разметки: от social-links --> a */
+
+.about-body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(176, 224, 230, 0.704), rgba(232, 166, 108, 0.367));
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+    padding: 25px;
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    
+}
+
+.introduction{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+
+}
+
+.achievements{
+    border: 1px dashed black;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.achievelist{
+    padding: 0;
+}
+
+.achieveitem{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.latin{
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.languages{
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.revname{
+    margin-left: 25px;
+}
+
+/* RANDOM SNIPPET FROM THE INTERNET FOR A IMG SLIDER*/
+
+html {
+    background-color: #eefbf8;
+    background-image: radial-gradient(circle, hsla(0,0%,100%,.1), hsla(0,0%,0%,.75)),
+                      linear-gradient(left, transparent 50%, hsla(0,0%,0%,.01) 50%);
+    background-position: 50% 75%, 50% 50%;
+    background-repeat: no-repeat, repeat;
+    background-size: 150% 150%, 3em 3em;
+    font-size: 100%;
+    min-height: 100%;
+}
+  /**********/
+ /* Slider */
+/**********/
+
+.slider {
+    background-color: #2cd8ff5e;
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
+                0 3px 1px hsla(0,0%,100%,.75),
+                0 -1px 1px 2px hsla(0,0%,0%,.1);
+    height: 6em;
+    left: 50%;
+    top: 50%;
+    width: 40em;
+}
+
+/* Frame */
+
+.slider:before {
+    background-color: #22130c;
+    bottom: -2.5em;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,.2),
+                inset 0 -2px 1px hsla(0,0%,0%,.4),
+                0 5px 50px hsla(0,0%,0%,.25),
+                0 20px 20px -15px hsla(0,0%,0%,.2),
+                0 30px 20px -15px hsla(0,0%,0%,.15),
+                0 40px 20px -15px hsla(0,0%,0%,.1);
+    content: '';
+    left: -2.5em;
+    position: absolute;
+    right: -2.5em;
+    top: -2.5em;
+    z-index: -1;
+}
+
+/* Mat */
+
+.slider:after {
+    background-color: #fff5e5;
+    bottom: -1.5em;
+    box-shadow: 0 2px 1px hsla(0,0%,100%,.2),
+                0 -1px 1px 1px hsla(0,0%,0%,.4),
+                inset 0 2px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 4px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 6px 3px 1px hsla(0,0%,0%,.1);
+    content: '';
+    left: -1.5em;
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
+    z-index: -1;
+}
+
+/* Slides */
+
+.slider li {
+    box-shadow: 0 -1px 0 2px hsla(0,0%,0%,.03);
+    list-style:none;
+    position: absolute;
+}
+.slider input {
+    display: none;
+}
+
+/* Navigation */
+
+.slider label {
+    background-color: #111;
+    background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
+    border: .2em solid transparent;
+    bottom: .5em;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: .5em;
+    left: 24em;
+    opacity: 0;
+    position: absolute;
+    transition: .25s;
+    width: .5em;
+    visibility: hidden;
+    z-index: 10;
+}
+.slider label:after {
+    border-radius: 100%;
+    bottom: -.2em;
+    box-shadow: inset 0 0 0 .2em #111,
+                inset 0 2px 2px #000,
+                0 1px 1px hsla(0,0%,100%,.25);
+    content: '';
+    left: -.2em;
+    position: absolute;
+    right: -.2em;
+    top: -.2em;
+}
+.slider:hover label {
+    opacity: 1;
+    visibility: visible;
+}
+.slider input:checked + label {
+    background-color: #fff;
+}
+.slider:hover li:nth-child(1) label {
+    left: .5em;
+}
+.slider:hover li:nth-child(2) label {
+    left: 2em;
+}
+.slider:hover li:nth-child(3) label {
+    left: 3.5em;
+}
+.slider:hover li:nth-child(4) label {
+    left: 5em;
+}
+
+/* Images */
+
+.slider img {
+    height: 5em;
+    opacity: 0;
+    transition: .25s;
+    width: 35em;
+    vertical-align: top;
+    visibility: hidden;
+}
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/*-------END OF THE SNIPPET-------*/
+
+
+strong{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booklink{
+    color: rgba(19, 12, 3, 0.637);
+}
+
+.booklink:hover{
+    color: rgba(137, 43, 226, 0.626);
+}
+
+.docbook{
+    align-self: center;
+    display: flex;
+    margin-bottom: 10px;
+    background-color: rgba(230, 157, 48, 0.223);
+    border-radius: 5px;
+    border: 1px dashed rgba(126, 50, 213, 0.693);
+    width: 250px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.detailtext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px dashed rgba(0, 0, 0, 0.433);
+}
+
+ol{
+    text-align: left;
+}
+
+.faq details {
+  margin-bottom: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 8px;
+  background-color: rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.faq summary {
+  font-weight: 600;
+  color: rgba(19, 12, 3, 0.637);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+}
+
+.faq p {
+  margin-top: 5px;
+  color: rgba(14, 8, 3, 0.641);
+  font-weight: 400;
+}
+
+.contact-foto{
+    width: 50%;
+    height: 35%;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin: 12px;
+    
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 400px;
+    min-height: 2em;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(102, 194, 247, 0.952);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgba(219, 133, 34, 0.8);
+}
+
+.thankyou {
+    display: none;
+    text-align: center;
+}
+
+/* Показываем блок "спасибо" при переходе по якорю */
+#sent:target .thankyou {
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    align-content: center;
+}
+
+.consent {
+    font-size: 10px;
+    color: rgb(245, 245, 245);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.consent a {
+    color: rgba(191, 110, 19, 0.873);
+    text-decoration: underline;
+}
+
+.consent input {
+    margin-right: 1px;
+    width: 10%;
+}
+
+.consent input[type="checkbox"] {
+    transform: scale(0.65); /* уменьшаем чекбокс до 80% */
+    vertical-align: middle;
+}
 
 
 /* работа над адаптивностью */

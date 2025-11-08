@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Верстаем навигацию + лендинг + медиазапросы</title>
+    <title>Doctor about</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,34 +15,86 @@
             <div class="header-button">
                 <button> &#9776; </button>
                 <ul>
-                    <li><a class = 'header-link' href="/">Главная</a></li>
-                    <li><a class = 'header-link' href="index2.html">О враче</a></li>
-                    <li><a class = 'header-link' href="index3.html">Услуги</a></li>
-                    <li><a class = 'header-link' href="index4.html">Контакты</a></li>
+                    <li><a class='header-link' href="index.html">Главная</a></li>
+                    <li><a class='header-link' href="index2.html">О враче</a></li>
+                    <li><a class='header-link' href="index3.html">Услуги</a></li>
+                    <li><a class='header-link' href="index4.html">Контакты</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="about-body">
+            <div class="introduction">
+                <h1>О враче</h1>
+                <p>Здравствуйте! Меня зовут Иванов Иван Иванович. Я - терапевт с опытом свыше 10 лет.</p>
+                <p>В своей практике я уделяю особое внимание профилактике хронических заболеваний и поддержке здорового
+                    образа жизни.</p>
+            </div>
+            <div class="achievements">
+                <h2>Профессиональные Успехи и Достижения</h2>
+                <ul class="achievelist">
+                    <li class="achieveitem">Медицинский университет им. Н. И. Пирогова — лечебное дело, 2012–2018</li>
+                    <li class="achieveitem">Ординатура по терапии, 2018–2020</li>
+                    <li class="achieveitem">Повышение квалификации: эндокринология, кардиология, нутрициология</li>
+                </ul>
+                <h3>Прочие полезные навыки</h3>
+                <p class="latin">Знание латинского</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet malesuada bibendum.
+                    Phasellus tempus odio quis turpis pellentesque vulputate. Donec consectetur scelerisque est, sed
+                    facilisis.</p>
+                <p class="languages">Знание языков программирования</p>
+                <p class="c++">#include iostream.h main() {cout << "Hello World!" << endl; return 0;}</p>
+                        <p class="java">class HelloWorld {static public void main( String args[] ) {System.out.println(
+                            "Hello World!" );}}</p>
+                        <p class="python">print("Hello World")</p>
+            </div>
+        </div>
+        <div class="reviews">
+            <!-- RANDOM SNIPPET FROM THE INTERNET FOR A IMG SLIDER-->
+            <h2 class="revname">Ознакомьтесь с отзывами довольных пациентов</h2>
+            <ul class="slider">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>
+                    <img src="static/Alexander rev.png" alt="Panel 1">
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label for="slide2"></label>
+                    <img src="static/Anastasia rev.png" alt="Panel 2">
+                </li>
+                <li>
+                    <input type="radio" id="slide3" name="slide">
+                    <label for="slide3"></label>
+                    <img src="static/Evgeniy rev.png" alt="Panel 3">
+                </li>
+                <li><a href="http://cssslider.com/">
+                        <input type="radio" id="slide4" name="slide">
+                        <label for="slide4"></label>
+                        <img src="static/Olga rev.png" alt="Panel 4"></a>
+                </li>
+            </ul>
+            <!-- END OF THE RANDOM SNIPPET-->
+        </div>
 
-        </div>
         <div class="gallery">
-            <p class="galleryname">Галерея</p>
+            <p class="galleryname">Сертификаты</p>
             <div class="album">
-                <img class="eachfoto" src="static/1.jpg" alt="фото1">
-                <img class="eachfoto" src="static/2.jpg" alt="фото2">
-                <img class="eachfoto" src="static/3.jpg" alt="фото3">
+                <img class="eachfoto" src="static/certificate.png" alt="фото1">
+                <img class="eachfoto" src="static/certificate.png" alt="фото2">
             </div>
         </div>
-        <div class="footer">
-            <p><img class="footer-img" src="static/telephone.svg" alt="иконка телефона" class="footer-img"> Телефон:
-                +7(999) 123-45-67</p>
-            <p>Почта: doctor@mail.ru</p>
-            <div class="social-links">
-                <a href="#"><img src="static/telegram.svg" alt="телеграм" class="footer-img"> Телеграм</a> |
-                <a href="#"><img src="static/vk.png" alt="вконтакте" class="footer-img"> Вконтакте</a> |
-                <a href="#"><img src="static/rutube.svg" alt="рутуб" class="footer-img"> Рутуб</a>
+            <div class="footer">
+                <p><img class="footer-img" src="static/telephone.svg" alt="иконка телефона" class="footer-img"> Телефон:
+                    +7(999) 123-45-67</p>
+                <p>Почта: doctor@mail.ru</p>
+                <div class="social-links">
+                    <a href="#"><img src="static/telegram.svg" alt="телеграм" class="footer-img"> Телеграм</a> |
+                    <a href="#"><img src="static/vk.png" alt="вконтакте" class="footer-img"> Вконтакте</a> |
+                    <a href="#"><img src="static/rutube.svg" alt="рутуб" class="footer-img"> Рутуб</a>
+                </div>
             </div>
         </div>
-    </div>
-<!-- Далее будет работа над адаптивностью; обновы в конце css'a-->
+        <!-- Далее будет работа над адаптивностью; обновы в конце css'a-->
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Верстаем навигацию + лендинг + медиазапросы</title>
+    <title>Doctor Contacts</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,22 +15,65 @@
             <div class="header-button">
                 <button> &#9776; </button>
                 <ul>
-                    <li><a class = 'header-link' href="/">Главная</a></li>
-                    <li><a class = 'header-link' href="index2.html">О враче</a></li>
-                    <li><a class = 'header-link' href="index3.html">Услуги</a></li>
-                    <li><a class = 'header-link' href="index4.html">Контакты</a></li>
+                    <li><a class='header-link' href="index.html">Главная</a></li>
+                    <li><a class='header-link' href="index2.html">О враче</a></li>
+                    <li><a class='header-link' href="index3.html">Услуги</a></li>
+                    <li><a class='header-link' href="index4.html">Контакты</a></li>
                 </ul>
             </div>
 
         </div>
-        <div class="gallery">
-            <p class="galleryname">Галерея</p>
-            <div class="album">
-                <img class="eachfoto" src="static/1.jpg" alt="фото1">
-                <img class="eachfoto" src="static/2.jpg" alt="фото2">
-                <img class="eachfoto" src="static/3.jpg" alt="фото3">
+        <div class="main">
+            <img class="contact-foto" src="static/clinic.jpg" alt="фото клиники">
+            <div class="textnear">
+                <h1>Контакты и запись</h1>
+                <p>Чтобы записаться на приём, заполните форму ниже или свяжитесь любым удобным способом.
+                    После отправки формы с Вами свяжется администратор для подтверждения времени визита.</p>
+                <p><strong>Адрес:</strong> г. NN, ул. XYZ, д. 10, кабинет 67</p>
+                <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                <p><strong>Почта:</strong> doctor@mail.ru</p>
+                <p><strong>Часы работы:</strong> Пн–Пт 09:00–18:00, Сб 09:00–13:00</p>
             </div>
         </div>
+
+        <div class="gallery">
+            <p class="galleryname">Форма для записи</p>
+            <div class="album">
+                <div class="text1">
+                    <form action="#sent" method="post" class="contact-form">
+                        <label>Имя:<br>
+                            <input type="text" name="name" required>
+                        </label><br><br>
+                        <label>Телефон:<br>
+                            <input type="tel" name="phone" required>
+                        </label><br><br>
+                        <label>Электронная почта:<br>
+                            <input type="email" name="email">
+                        </label><br><br>
+                        <label>Сообщение:<br>
+                            <textarea name="message" rows="4" placeholder="Опишите причину обращения"></textarea>
+                        </label><br><br>
+
+                        <!-- Новый блок согласия -->
+                        <label class="consent">
+                            <input type="checkbox" name="consent" required>
+                            Я соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+                        </label><br><br>
+
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="sent" class="album">
+                <div class="text1 thankyou">
+                    <p><strong>Спасибо!</strong> Ваша заявка успешно отправлена (демонстрационный режим).</p>
+                    <a class="header-link" href="index4.html">← Вернуться к форме</a>
+                </div>
+            </div>
+        </div>
+
+
         <div class="footer">
             <p><img class="footer-img" src="static/telephone.svg" alt="иконка телефона" class="footer-img"> Телефон:
                 +7(999) 123-45-67</p>
@@ -42,7 +85,7 @@
             </div>
         </div>
     </div>
-<!-- Далее будет работа над адаптивностью; обновы в конце css'a-->
+    <!-- Далее будет работа над адаптивностью; обновы в конце css'a-->
 </body>
 
 </html>

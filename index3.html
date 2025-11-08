@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Верстаем навигацию + лендинг + медиазапросы</title>
+    <title>Doctor Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,34 +15,108 @@
             <div class="header-button">
                 <button> &#9776; </button>
                 <ul>
-                    <li><a class = 'header-link' href="/">Главная</a></li>
-                    <li><a class = 'header-link' href="index2.html">О враче</a></li>
-                    <li><a class = 'header-link' href="index3.html">Услуги</a></li>
-                    <li><a class = 'header-link' href="index4.html">Контакты</a></li>
+                    <li><a class='header-link' href="index.html">Главная</a></li>
+                    <li><a class='header-link' href="index2.html">О враче</a></li>
+                    <li><a class='header-link' href="index3.html">Услуги</a></li>
+                    <li><a class='header-link' href="index4.html">Контакты</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="main">
+            <img class="foto" src="static/medcabinet.jfif" alt="фото медицинского кабинета">
+            <div class="textnear">
+                <h1>Услуги и приём</h1>
+                <p>На приёме вы получите полную оценку состояния здоровья, рекомендации по обследованию
+                    и индивидуальный план профилактики. Все услуги оказываются по предварительной записи.</p>
+                <p>Приём ведётся по адресу: г. NN, ул. XYZ, д. 10, кабинет 67.</p>
+            </div>
+        </div>
 
-        </div>
         <div class="gallery">
-            <p class="galleryname">Галерея</p>
+            <p class="galleryname">Основные услуги</p>
             <div class="album">
-                <img class="eachfoto" src="static/1.jpg" alt="фото1">
-                <img class="eachfoto" src="static/2.jpg" alt="фото2">
-                <img class="eachfoto" src="static/3.jpg" alt="фото3">
+                <div class="text1">
+                    <ul>
+                        <li class="detailtext"><strong>Первичный приём (45 минут)</strong>
+                            <p>сбор анамнеза, осмотр, план обследований.</p>
+                        </li>
+                        <li class="detailtext"><strong>Повторный приём (20–30 минут)</strong>
+                            <p>обсуждение анализов, корректировка лечения.</p>
+                        </li>
+                        <li class="detailtext"><strong>Профилактический осмотр</strong>
+                            <p>рекомендации по образу жизни и питанию,
+                                базовая оценка состояния.</p>
+                        </li>
+                        <li class="detailtext"><strong>Онлайн-консультация</strong>
+                            <p>обсуждение результатов обследований,
+                                уточнение назначений и профилактические советы.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="footer">
-            <p><img class="footer-img" src="static/telephone.svg" alt="иконка телефона" class="footer-img"> Телефон:
-                +7(999) 123-45-67</p>
-            <p>Почта: doctor@mail.ru</p>
-            <div class="social-links">
-                <a href="#"><img src="static/telegram.svg" alt="телеграм" class="footer-img"> Телеграм</a> |
-                <a href="#"><img src="static/vk.png" alt="вконтакте" class="footer-img"> Вконтакте</a> |
-                <a href="#"><img src="static/rutube.svg" alt="рутуб" class="footer-img"> Рутуб</a>
+
+            <p class="galleryname">Как проходит приём</p>
+            <div class="album">
+                <div class="text1">
+                    <ol>
+                        <li>Запись на приём по телефону или через форму на сайте.</li>
+                        <li>Консультация, осмотр и при необходимости назначение анализов.</li>
+                        <li>Определение оптимального плана лечения или профилактики.</li>
+                        <li>Дальнейшее наблюдение и онлайн-поддержка при необходимости.</li>
+                    </ol>
+                </div>
             </div>
-        </div>
-    </div>
-<!-- Далее будет работа над адаптивностью; обновы в конце css'a-->
+
+            <p class="galleryname">Стоимость</p>
+            <div class="album">
+                <div class="text1">
+                    <ul>
+                        <li>Первичный приём — <span>2500 ₽</span></li>
+                        <li>Повторный приём — <span>1200 ₽</span></li>
+                        <li>Профилактический осмотр — <span>2000 ₽</span></li>
+                        <li>Онлайн-консультация — <span>1000 ₽</span></li>
+                    </ul>
+                    <p class="latin"><span>*Цены ориентировочные, уточняйте при записи.</span></p>
+                    <button class="docbook"><a class="booklink" href="index4.html">Записаться на
+                            консультацию</a></button>
+                </div>
+            </div>
+
+            <p class="galleryname">Часто задаваемые вопросы</p>
+            <div class="album">
+                <div class="text1 faq">
+
+                    <details>
+                        <summary>Нужно ли приносить анализы?</summary>
+                        <p>Если у вас есть результаты за последние 6 месяцев — возьмите их с собой.
+                            Это поможет точнее оценить состояние здоровья.</p>
+                    </details>
+
+                    <details>
+                        <summary>Можно ли получить справку на работу?</summary>
+                        <p>Да, при необходимости оформляется медицинская справка установленного образца.</p>
+                    </details>
+
+                    <details>
+                        <summary>Принимаете ли вы детей?</summary>
+                        <p>Нет, приём ведётся только для взрослых пациентов (18+).</p>
+                    </details>
+
+                </div>
+            </div>
+
+            <div class="footer">
+                <p><img class="footer-img" src="static/telephone.svg" alt="иконка телефона" class="footer-img"> Телефон:
+                    +7(999) 123-45-67</p>
+                <p>Почта: doctor@mail.ru</p>
+                <div class="social-links">
+                    <a href="#"><img src="static/telegram.svg" alt="телеграм" class="footer-img"> Телеграм</a> |
+                    <a href="#"><img src="static/vk.png" alt="вконтакте" class="footer-img"> Вконтакте</a> |
+                    <a href="#"><img src="static/rutube.svg" alt="рутуб" class="footer-img"> Рутуб</a>
+                </div>
+            </div>
+        <!-- Далее будет работа над адаптивностью; обновы в конце css'a-->
 </body>
 
 </html>
